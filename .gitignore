@@ -6,3 +6,7 @@ platforms
 measureapp.crx
 
 measureapp.pem
+
+*.crx
+
+*.pem
