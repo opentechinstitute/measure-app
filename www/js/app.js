@@ -143,7 +143,7 @@ angular.module('Measure', ['ionic', 'gettext', 'ngSanitize',
 })
 .value('DialogueMessages', {
 	'historyReset': {
-		title: 'Confirm Reset',
+		$scope.historyResetTitle = gettextCatalog.getString('Confirm Reset')
 		templateUrl: 'templates/modals/messageResetHistory.html'
 	},
 	'measurementFailure': {
