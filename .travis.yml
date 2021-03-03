@@ -4,5 +4,8 @@ node_js:
 install:
   - yarn
 script:
+# This sets the upload url to the value of a travis environment variable, only
+# for the 'schools' branch.
+  - sed -i 's/{{DEFAULT_UPLOAD_URL}}/${UPLOAD_URL}/g' www/js/services/settingsService.js
   - gulp extension
   - echo "Extension built successfully."
