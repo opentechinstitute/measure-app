@@ -69,6 +69,10 @@ cca build android --release
 
 **NB:** The app can be loaded as a Chrome App (standalone) or Chrome extension (browser-embedded).
 
+The schools version of the extension comes with a pre-configured uploadURL.
+Please remember to change it in www/js/services/settingsService.js before
+building the extension, or it will use localhost and the default backend port.
+
 Only run this command if you want to build the extension version.  Otherwise skip to [Running](#Running).
 
 ```bash
